@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>André Lucas — Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 9pt;
+    color: #333;
+    background: #fff;
+    padding: 1.2cm 1.5cm;
+    max-width: 21cm;
+    margin: 0 auto;
+  }
+  .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .header-left h1 { font-size: 22pt; color: #222; font-weight: 700; line-height: 1.1; }
+  .header-left .cargo { font-size: 10pt; color: #1a56a0; font-weight: 600; margin-top: 2px; }
+  .header-right { text-align: right; font-size: 8.5pt; color: #555; line-height: 1.8; }
+  .divider { border: none; border-top: 1.5px solid #ccc; margin: 8px 0; }
+  .resumo { font-size: 8.5pt; color: #555; line-height: 1.5; margin-bottom: 8px; }
+  .columns { display: grid; grid-template-columns: 57% 43%; gap: 0; border-top: 1px solid #ccc; }
+  .col-left { padding-right: 16px; border-right: 1px solid #ccc; }
+  .col-right { padding-left: 16px; }
+  .section-title { font-size: 9pt; font-weight: 700; color: #222; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 12px; margin-bottom: 2px; padding-bottom: 2px; border-bottom: 1.5px solid #1a56a0; }
+  .timeline-item { display: flex; gap: 8px; margin-top: 8px; }
+  .timeline-left { display: flex; flex-direction: column; align-items: center; padding-top: 3px; }
+  .circle { width: 9px; height: 9px; border-radius: 50%; background-color: #1a56a0; flex-shrink: 0; }
+  .timeline-line { width: 1.5px; flex: 1; background-color: #1a56a0; margin-top: 2px; min-height: 20px; }
+  .timeline-content { flex: 1; }
+  .exp-header { display: flex; justify-content: space-between; align-items: flex-start; }
+  .exp-cargo { font-weight: 700; font-size: 9pt; color: #222; }
+  .exp-empresa { font-size: 8.5pt; color: #555; }
+  .exp-periodo { font-size: 7.5pt; color: #1a56a0; font-style: italic; text-align: right; white-space: nowrap; margin-left: 8px; }
+  .exp-local { font-size: 7.5pt; color: #1a56a0; font-style: italic; text-align: right; }
+  .task-header { font-size: 7.5pt; color: #888; font-style: italic; margin-top: 4px; margin-bottom: 2px; }
+  .task-item { font-size: 8pt; color: #444; line-height: 1.4; margin-bottom: 2px; padding-left: 8px; border-left: 2px solid #ddd; }
+  .task-link { font-size: 7.5pt; color: #1a56a0; font-style: italic; margin-top: 3px; margin-bottom: 4px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .tag { background: #dce8f8; color: #1a56a0; font-size: 7.5pt; font-weight: 600; padding: 2px 7px; border-radius: 3px; }
+  .cert-item { margin-top: 6px; }
+  .cert-nome { font-size: 8.5pt; color: #333; font-weight: 600; }
+  .cert-periodo { font-size: 7.5pt; color: #777; font-style: italic; }
+  .idiomas { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 6px; }
+  .idioma-nome { font-size: 8.5pt; font-weight: 700; color: #222; }
+  .idioma-nivel { font-size: 7.5pt; color: #1a56a0; font-style: italic; }
+  @media print { body { padding: 0.8cm 1cm; } @page { margin: 0; size: A4; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>André Lucas</h1>
+    <div class="cargo">Software Engineering Student</div>
+  </div>
+  <div class="header-right">
+    <div><a href="mailto:dilucas986@gmail.com" style="color:#555;text-decoration:none;">dilucas986@gmail.com ✉</a></div>
+    <div><a href="tel:+5561993035693" style="color:#555;text-decoration:none;">+55 (61) 99303-5693 📱</a></div>
+    <div>Brasília, Brazil 📍</div>
+    <div><a href="https://www.linkedin.com/in/andré-lucass" target="_blank" style="color:#1a56a0;text-decoration:none;">linkedin.com/in/andré-lucass 🔗</a></div>
+  </div>
+</div>
+
+<hr class="divider" />
+
+<p class="resumo">
+  Software Engineering student with experience in IT technical support N1/N2, networking and administration of Windows Server and Linux systems. Deep interest in information security, with emphasis on system hardening (sysctl) and infrastructure protection best practices.
+</p>
+
+<hr class="divider" />
+
+<div class="columns">
+  <div class="col-left">
+
+    <div class="section-title">Education</div>
+    <div class="timeline-item">
+      <div class="timeline-left"><div class="circle"></div></div>
+      <div class="timeline-content">
+        <div class="exp-header">
+          <div>
+            <div class="exp-cargo">Software Engineering</div>
+            <div class="exp-empresa">UNICEPLAC — University Center</div>
+          </div>
+          <div class="exp-periodo">03/2024 – Present</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Work Experience</div>
+
+    <div class="timeline-item">
+      <div class="timeline-left"><div class="circle"></div><div class="timeline-line"></div></div>
+      <div class="timeline-content">
+        <div class="exp-header">
+          <div>
+            <div class="exp-cargo">IT Support Intern — N1/N2</div>
+            <div class="exp-empresa">DATAPREV</div>
+          </div>
+          <div>
+            <div class="exp-local">Brasília, Brazil</div>
+            <div class="exp-periodo">01/2026 – Present</div>
+          </div>
+        </div>
+        <div class="task-header">Achievements/Tasks</div>
+        <div class="task-item">Administration of Windows and Linux systems, Windows Server, user management via Active Directory, GPO configuration, remote support via Kaspersky and ServiceNow usage.</div>
+        <div class="task-item">Hardware and software troubleshooting, system formatting via WinPE, ISO image standardization with AnyBurn and basic forensic analysis.</div>
+        <div class="task-link">Contact: <a href="https://www.dataprev.gov.br/" target="_blank" style="color:#1a56a0;">https://www.dataprev.gov.br/</a></div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left"><div class="circle"></div><div class="timeline-line"></div></div>
+      <div class="timeline-content">
+        <div class="exp-header">
+          <div>
+            <div class="exp-cargo">Domain Technical Support</div>
+            <div class="exp-empresa">DTIC Department — UNICEPLAC</div>
+          </div>
+          <div>
+            <div class="exp-local">Brasília, Brazil</div>
+            <div class="exp-periodo">03/2026 – Present</div>
+          </div>
+        </div>
+        <div class="task-header">Achievements/Tasks</div>
+        <div class="task-item">Domain administration with Active Directory, user management, access control and GPO, supporting Windows-integrated workstations.</div>
+        <div class="task-item">Diagnosis of authentication, access and network issues, with ticket logging and tracking via JIRA.</div>
+        <div class="task-link">Contact: <a href="https://www.uniceplac.edu.br/" target="_blank" style="color:#1a56a0;">https://www.uniceplac.edu.br/</a></div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left"><div class="circle"></div><div class="timeline-line"></div></div>
+      <div class="timeline-content">
+        <div class="exp-header">
+          <div>
+            <div class="exp-cargo">Network Technical Support</div>
+            <div class="exp-empresa">CHIP7</div>
+          </div>
+          <div>
+            <div class="exp-local">Brasília, Brazil</div>
+            <div class="exp-periodo">05/2024 – 05/2025</div>
+          </div>
+        </div>
+        <div class="task-header">Achievements/Tasks</div>
+        <div class="task-item">RJ45 cable crimping, PoE power supply, DHCP Server configuration, firewalls, structured cabling, switches and network points.</div>
+        <div class="task-item">Hardware diagnosis and repair, boot failure correction, OS installation and email service normalization (Google Workspace and Microsoft).</div>
+        <div class="task-link">Contact: <a href="https://chip7.pt/" target="_blank" style="color:#1a56a0;">https://chip7.pt/</a></div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left"><div class="circle"></div></div>
+      <div class="timeline-content">
+        <div class="exp-header">
+          <div>
+            <div class="exp-cargo">IT Lab Monitor</div>
+            <div class="exp-empresa">October Cursos e Treinamentos</div>
+          </div>
+          <div>
+            <div class="exp-local">Brasília, Brazil</div>
+            <div class="exp-periodo">04/2023 – 12/2023</div>
+          </div>
+        </div>
+        <div class="task-header">Achievements/Tasks</div>
+        <div class="task-item">Help desk support, user management, credential reset, access control and preparation of the educational environment for hands-on lab activities.</div>
+        <div class="task-item">Instruction in Microsoft Excel, Office suite, graphic design tools and programming logic fundamentals.</div>
+        <div class="task-link">Contact: <a href="https://www.octobercursos.com.br/" target="_blank" style="color:#1a56a0;">https://www.octobercursos.com.br/</a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-right">
+
+    <div class="section-title">Skills</div>
+    <div class="tags">
+      <span class="tag">Technical Support</span>
+      <span class="tag">TCP/IP Networks</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Windows Server</span>
+      <span class="tag">Active Directory</span>
+      <span class="tag">GPO</span>
+      <span class="tag">Info. Security</span>
+      <span class="tag">PowerShell</span>
+      <span class="tag">Git</span>
+      <span class="tag">Java</span>
+      <span class="tag">PHP</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Bootstrap</span>
+      <span class="tag">ServiceNow</span>
+      <span class="tag">JIRA</span>
+      <span class="tag">Agile Methodologies</span>
+    </div>
+
+    <div class="section-title">Certificates</div>
+    <div class="cert-item">
+      <div class="cert-nome">Complete Web Development — Udemy</div>
+      <div class="cert-periodo">04/2025 – 02/2026</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-nome">CCNA 200-301 — DlteC</div>
+      <div class="cert-periodo">01/2026 – Present</div>
+    </div>
+    <div class="cert-item">
+      <div class="cert-nome">ITIL 4 Foundation — Udemy</div>
+      <div class="cert-periodo">03/2026 – Present</div>
+    </div>
+
+    <div class="section-title">Languages</div>
+    <div class="idiomas">
+      <div>
+        <div class="idioma-nome">Portuguese</div>
+        <div class="idioma-nivel">Native</div>
+      </div>
+      <div>
+        <div class="idioma-nome">English</div>
+        <div class="idioma-nivel">Intermediate</div>
+      </div>
+    </div>
+
+    <div class="section-title">Interests</div>
+    <div class="tags">
+      <span class="tag">Info. Security</span>
+      <span class="tag">Blue Team</span>
+      <span class="tag">IT Infrastructure</span>
+      <span class="tag">Back-end Dev</span>
+      <span class="tag">Hardening</span>
+      <span class="tag">Networking</span>
+      <span class="tag">Agile</span>
+      <span class="tag">Knowledge Sharing</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
